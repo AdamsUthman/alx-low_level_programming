@@ -3,8 +3,10 @@
 #include <stdio.h>
 
 /**
- *main- Entry point
- *return:0 (success)
+ * main - Entry point
+ * Return: 0 (success)
+ *
+ * Entry point is were the code starts from
  */
 
 int main(void)
