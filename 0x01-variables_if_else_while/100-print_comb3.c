@@ -1,29 +1,31 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- *main - prints 00 to 99
- *Return:0 Success
+ * main - Entyr point
+ * Description: prints two digits combination
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int tens;
-	int ones;
+	int c, i;
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(tens == '9' && ones == '9'))
+			if (c < i)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(c);
+				putchar(i);
+
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
