@@ -23,7 +23,7 @@ int main(void)
 				{
 					putchar(tens);
 					putchar(ones);
-					putchar(',');
+					putchar(' ');
 					putchar(t);
 					putchar(o);
 
