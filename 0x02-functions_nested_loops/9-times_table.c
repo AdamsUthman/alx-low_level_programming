@@ -1,43 +1,43 @@
 #include "main.h"
 
 /**
- *times_table - prints the 9 times table
+ * times_table - prints the 9 ties table
  *
- *Description: prints the 9 times taable
- *
- *Return: void
+ * Return: void
  */
-void times__table(void)
+
+void times_table(void)
 {
-	int row;
-	int column;
-	int product;
+	int row, column, product, tens, ones;
 
 	for (row = 0; row <= 9; row++)
 	{
 		for (column = 0; column <= 9; column++)
 		{
-			product = (row * column);
+			product = row * column;
+			tens = product / 10;
+			ones = product % 10;
 
 			if (column == 0)
 			{
-				_putchar('0' + product);
+				_putchar('0');
 			}
-			else if (product <= 9)
+			else if (product < 10)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar('0' + product);
+				_putchar(ones + '0');
 			}
-			else if (product > 9)
+			else
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar('0' + (product / 10));
-				_putchar('0' + (product % 10));
+				_putchar(tens + '0');
+				_putchar(ones + '0');
 			}
 		}
 		_putchar('\n');
 	}
 }
+
