@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
- * times_table - prints multiplication table
+ *times_table - prints the 9 times table
+ *
+ *Description: prints the 9 times taable
+ *
+ *Return: void
  */
 void times__table(void)
 {
@@ -14,6 +18,7 @@ void times__table(void)
 		for (column = 0; column <= 9; column++)
 		{
 			product = (row * column);
+
 			if (column == 0)
 			{
 				_putchar('0' + product);
