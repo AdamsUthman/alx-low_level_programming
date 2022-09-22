@@ -23,7 +23,7 @@ char *leet(char *s)
 				break;
 			}
 		}
-		counter++;
+		count++;
 	}
 	return (s);
 }
