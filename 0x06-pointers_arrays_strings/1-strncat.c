@@ -3,14 +3,14 @@
 /**
  * _strncat - concatenates ytwo strings
  * @dest: destination
- * @crc: source
+ * @src: source
  * @n: amount of bytes used from src
- * Retrun: the pointer to dest
+ * Return: the pointer to dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int count = 0, count2 =0;
+	int count = 0, count2 = 0;
 
 	while (*(dest + count) != '\0')
 	{
