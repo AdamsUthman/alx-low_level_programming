@@ -2,12 +2,12 @@
 /**
  * main - prints its names, followed by anew line
  * @argc: number of command line arguments
- * @agrv: array that contains the program command line arguments
+ * @argv: array that contains the program command line arguments
  * Return: 0 - success
  */
 
-int maiprintf(argc __attribute__((unused)), char *argv[])
+int main(argc __attribute__((unused)), char *argv[])
 {
-	orintf("%s\n", argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
