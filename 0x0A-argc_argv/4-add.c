@@ -5,14 +5,12 @@
  * main - adds positive numbers
  * @argc: numbers of command line arguments
  * @argv: array that contains the program command line arguments
- * REturn: 0 - success
+ * Return: 0 - success
  */
 
 int main(int argc, char *argv[i])
 {
-	int i;
-	int j;
-	add = 0;
+	int i, j, add = 0;
 
 	for (i = 1; i < argc; i++)
 	{
