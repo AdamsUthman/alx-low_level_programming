@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * _realloc - rellocates a memory block using malloc and free
+ * _realloc -  reallocates a memory block using malloc and free
  * @ptr: pointer
  * @old_size: old size
  * @new_size: new size
  * Return: pointer
  */
-
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *clone, *realloc;
+	char *clone, *relloc;
 	unsigned int i;
 
 	if (ptr != NULL)
-		clone = ptr;
+	clone = ptr;
 	else
 	{ return (malloc(new_size)); }
 	if (new_size == old_size)
@@ -32,3 +31,4 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	free(ptr);
 return (relloc);
 }
+Foo
