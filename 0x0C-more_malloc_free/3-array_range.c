@@ -6,8 +6,7 @@
  * @max: maximum
  * Return: array
  */
-
-int *array_tange(int min, int max)
+int *array_range(int min, int max)
 {
 	int *arr, i = 0, t = min;
 
@@ -19,5 +18,5 @@ int *array_tange(int min, int max)
 		return (0);
 	while (i <= max - min)
 		arr[i++] = t++;
-	reurn (arr);
+	return (arr);
 }
