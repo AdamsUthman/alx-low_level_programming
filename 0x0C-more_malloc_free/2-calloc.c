@@ -7,12 +7,11 @@
  * @n: bytes
  * Return: string
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	for (I = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
@@ -23,9 +22,8 @@ char *_memset(char *s, char b, unsigned int n)
  * _calloc - allocates memory for an array using malloc
  * @nmemb: n elements
  * @size: bytes
- * Return: ponter
+ * Return: pointer
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
