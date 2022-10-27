@@ -7,7 +7,7 @@
  * Return: unsigned int
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_int(const char *b)
 {
 	unsigned int ui;
 	int len, base_two;
